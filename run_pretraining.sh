@@ -1,0 +1,12 @@
+python run_pretraining.py \
+  --input_file=/home/lil/Dataset/BookCorpus/pretraining_data \
+  --output_dir=/home/lil/Output/Roberta/pretrain \
+  --do_train=True \
+  --do_eval=True \
+  --bert_config_file=/home/lil/Model/Roberta-large/config.json \
+  --train_batch_size=16 \
+  --max_seq_length=128 \
+  --max_predictions_per_seq=20 \
+  --num_train_steps=100000 \
+  --num_warmup_steps=10 \
+  --learning_rate=1e-6
